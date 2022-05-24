@@ -1,14 +1,16 @@
-form.addEventListener("submit", () => {
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
   const register = {
     name: username.value,
     email: email.value,
     password: password.value,
   };
-  fetch("api/register", {
+  console.log(register);
+  fetch("/api/register", {
     method: "POST",
     body: JSON.stringify(register),
     headers: {
-      "Content-Type": "applicantion/json",
+      "Content-Type": "application/json",
     },
   })
     .then((res) => res.json())
