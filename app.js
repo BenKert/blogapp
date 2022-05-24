@@ -10,8 +10,9 @@ app.use("/css", express.static(__dirname + "./public/css"));
 app.set("view engine", "ejs");
 app.set("views", "./views");
 
-app.use("/api/users", require("./routes/usersRoutes"));
-app.use("/api/blog", require("./routes/blogRoutes"));
+//app.use("/api/users", require("./routes/usersRoutes"));
+//app.use("/api/blog", require("./routes/blogRoutes"));
+app.use("/", require("./routes/pages"));
 
 app.listen(process.env.DB_PORT, () => {
   console.log(`App listening on port ${process.env.DB_PORT}`);

@@ -13,7 +13,7 @@
     <title>Register page</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Register page</a>
         <button
@@ -30,9 +30,6 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="/login">Login</a>
             </li>
           </ul>
@@ -46,7 +43,13 @@
           <form onsubmit="return false;" id="form">
             <div class="mb-3">
               <label for="username" class="form-label">Username</label>
-              <input type="text" class="form-control" id="username" />
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                autocomplete="off"
+                required
+              />
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email address</label>
@@ -55,6 +58,8 @@
                 class="form-control"
                 id="email"
                 aria-describedby="emailHelp"
+                autocomplete="off"
+                required
               />
               <div id="emailHelp" class="form-text">
                 We'll never share your email with anyone else.
@@ -62,7 +67,13 @@
             </div>
             <div class="mb-3">
               <label for="password" class="form-label">Password</label>
-              <input type="password" class="form-control" id="password" />
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                autocomplete="off"
+                required
+              />
             </div>
             <div
               class="alert alert-danger"
