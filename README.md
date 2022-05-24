@@ -1,0 +1,3 @@
+# blogapp
+Jeigu papuls iš pirmųjų vertint, please skip it...
+Bandysiu geriau vėluot ir su penalty kitą darbą priduot, nes kitaip, tai galėsiu grįžti fūras reguliuot :D
