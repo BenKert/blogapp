@@ -3,5 +3,5 @@ const express = require("express");
 
 const router = express.Router();
 
-router.route("/").get(logController.getAllLogs);
-router.route("/:id").get(logController.getLog);
+// router.route("/").get(logController.getAllLogs);
+// router.route("/:id").get(logController.getLog);
